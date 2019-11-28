@@ -9,5 +9,7 @@ let package = Package(
 
         // JSON wrapper around Node.
         .package(url: "https://github.com/vapor/json.git", from: "2.0.0")
+    ], targets:  [
+      .target(name: "CloudModels", dependencies: ["Fluent", "JSON"])
     ]
 )
